@@ -1,3 +1,14 @@
 export default function Home() {
-  return (<h1 className="text-2xl">Home</h1>)
+  return (
+    <>
+      <section className='pink_container'>
+        <h1 className='heading'>
+          Present Your Startup <br /> Connect With Entrepreneurs
+        </h1>
+        <p className='sub-heading !max-w-3xl'>
+          Submit Ideal, Vote on Pictches and Get Noticed for Startup Finance.
+        </p>
+      </section>
+    </>
+  )
 }

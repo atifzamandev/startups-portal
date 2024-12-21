@@ -14,7 +14,7 @@ const NavBar = async () => {
 
         <div className='flex items-center gap-5 text-black'>
           {session && session.user ? (
-            <div>
+            <>
               <Link href='/startup/create'>
                 <span>Create</span>
               </Link>
@@ -31,7 +31,7 @@ const NavBar = async () => {
               <Link href={`/user/${session.user.id}`}>
                 <span>{session.user.name}</span>
               </Link>
-            </div>
+            </>
           ) : (
             <form
               action={async () => {
